@@ -59,8 +59,9 @@ export default class App extends React.Component {
           <option value={''}>- No. of Horns -</option>
           {hornsArray}
         </select>
-
-          <ImageList images={filteredByHorns}/>
+          <div className='image-div'>
+            <ImageList images={filteredByHorns}/>
+          </div>
       
       </div>
     );
