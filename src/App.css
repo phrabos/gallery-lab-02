@@ -1,16 +1,9 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-header {
@@ -38,7 +31,37 @@
 }
 .images {
   width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 li {
   list-style: none;
+  border: 1px solid white;
+  background-color: gainsboro;
+}
+.image-div{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0px;
+  margin:0px;
+  flex-wrap: wrap;
+  /* background-color: gainsboro; */
+  width: 99vw;
+}
+select {
+  height: 30px;
+  width: 160px;
+  text-align: center;
+}
+select_text {
+  text-align: center;
 }
