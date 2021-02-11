@@ -6,7 +6,7 @@ export default class Header extends React.Component {
         return (
             <>
             <h1>
-                Some Images of Horned Creatures!
+                {this.props.title}
             </h1>
             </>
         )

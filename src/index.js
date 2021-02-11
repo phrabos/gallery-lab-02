@@ -9,9 +9,9 @@ import images3 from './data3';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App dataObject={images}/>
-    <App dataObject={images2}/>
-    <App dataObject={images3}/>
+    <App dataObject={images} text='Horned Creatures'/>
+    <App dataObject={images3} text='Nicky Cage'/>
+    <App dataObject={images2} text='Cats'/>
   </React.StrictMode>,
   document.getElementById('root')
 );
