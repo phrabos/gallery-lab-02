@@ -53,7 +53,13 @@ export default class App extends React.Component {
           handleChange={this.handleHornChange}
           options={uniqueHorns}
         />
-        <button>Reset Filter</button>
+        <button onClick={(e) =>{
+    this.setState({
+      keyword: '',
+      horns: 0
+    })
+  }
+  }>Reset Filter</button>
           <div className='image-div'>
             <ImageList images={filteredByHorns}/>
           </div>
