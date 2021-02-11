@@ -3,7 +3,8 @@ import './App.css';
 import React from 'react';
 import ImageList from './ImageList.js';
 import images from './data.js';
-import images2 from './data2';
+import images2 from './data2.js';
+import images3 from './data3.js'
 import Dropdown from './dropdown.js';
 
 export default class App extends React.Component {
@@ -37,10 +38,11 @@ export default class App extends React.Component {
         if (animal.horns === this.state.horns) return true;
         return false;
     })
+    const headerText = this.props.text;
 
     return (
       <div className="App">
-        <Header />
+        <Header title={headerText}/>
         <Dropdown 
           currentValue={this.state.keyword}
           handleChange={this.handleNameChange}

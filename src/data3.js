@@ -1,4 +1,4 @@
-const images2 = [
+const images3 = [
     {
       url:"https://www.placecage.com/gif/200/200",
       title: "UniWhal",
@@ -144,4 +144,4 @@ const images2 = [
     }
   ];
   
-  export default images2;
+  export default images3;
