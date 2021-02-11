@@ -22,9 +22,9 @@ export default class App extends React.Component {
     })
   }
   render() {
-    const uniques = Array.from(new Set(images.map(image => image.keyword)));
+    const uniques = Array.from(new Set(this.props.dataObject.map(image => image.keyword)));
     
-    const filteredCreatures = images.filter((image)=> {
+    const filteredCreatures = this.props.dataObject.filter((image)=> {
       if (!this.state.keyword) return true;
       if (image.keyword === this.state.keyword) return true;
       return false;
